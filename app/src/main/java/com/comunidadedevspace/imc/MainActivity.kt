@@ -17,11 +17,13 @@ class MainActivity : AppCompatActivity() {
 
         btn_calcular.setOnClickListener {
 
-            val peso = edtpeso.text
-            println("Button Action"+ peso)
+            val peso: Float = edtpeso.text.toString().toFloat()
+            val altura: Float  = edtaltura.text.toString().toFloat()
 
-            val altura = edtaltura.text
-            println("Button Action" + altura)
+            val alturaQ2 = altura * altura
+            val resutado = peso * alturaQ2
+
+            println("Button Action" + resutado)
         }
     }
 }
