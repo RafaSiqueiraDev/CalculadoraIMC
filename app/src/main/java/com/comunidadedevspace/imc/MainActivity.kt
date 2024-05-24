@@ -3,6 +3,7 @@ package com.comunidadedevspace.imc
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import com.google.android.material.snackbar.Snackbar
 import com.google.android.material.textfield.TextInputEditText
 
 class MainActivity : AppCompatActivity() {
@@ -22,10 +23,13 @@ class MainActivity : AppCompatActivity() {
 
             if (pesoStr == "" || alturaStr == "") {
             // mostrar mensagem para o usuario
+                Snackbar.make(edtpeso,
+                    "Preencha todos os campos acima",
+                    Snackbar.LENGTH_LONG).show()
 
         } else {
-            val peso: Float = edtpeso.text.toString().toFloat()
-            val altura: Float  = edtaltura.text.toString().toFloat()
+            val peso: Float = pesoStr.toFloat()
+            val altura: Float  = alturaStr.toFloat()
 
             val alturaQ2 = altura * altura
             val resutado = peso * alturaQ2
