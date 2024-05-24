@@ -17,6 +17,13 @@ class MainActivity : AppCompatActivity() {
 
         btn_calcular.setOnClickListener {
 
+            val pesoStr: String = edtpeso.text.toString()
+            val alturaStr: String = edtaltura.text.toString()
+
+            if (pesoStr == "" || alturaStr == "") {
+            // mostrar mensagem para o usuario
+
+        } else {
             val peso: Float = edtpeso.text.toString().toFloat()
             val altura: Float  = edtaltura.text.toString().toFloat()
 
@@ -24,6 +31,9 @@ class MainActivity : AppCompatActivity() {
             val resutado = peso * alturaQ2
 
             println("Button Action" + resutado)
+                }
+
+
         }
     }
 }
