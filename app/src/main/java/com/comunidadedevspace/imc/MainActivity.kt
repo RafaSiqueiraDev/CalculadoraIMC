@@ -1,5 +1,6 @@
 package com.comunidadedevspace.imc
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -14,6 +15,7 @@ class MainActivity : AppCompatActivity() {
         val edtpeso = findViewById<TextInputEditText>(R.id.edt_peso)
         val edtaltura = findViewById<TextInputEditText>(R.id.Edt_altura)
         val btn_calcular =findViewById<Button>(R.id.btn_calcular)
+
 
 
         btn_calcular.setOnClickListener {
@@ -33,6 +35,15 @@ class MainActivity : AppCompatActivity() {
 
             val alturaQ2 = altura * altura
             val resutado = peso * alturaQ2
+
+            // Navegar para próxima tela
+            // Criar o layout da próxima tela
+            // Passar dados (resultado) proxima tela
+
+            val intent = Intent(this,ResultActivity::class.java)
+            intent.putExtra("123",resutado )
+            startActivity(intent)
+
 
             println("Button Action" + resutado)
                 }
