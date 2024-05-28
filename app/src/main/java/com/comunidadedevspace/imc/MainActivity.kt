@@ -41,7 +41,7 @@ class MainActivity : AppCompatActivity() {
             // Passar dados (resultado) proxima tela
 
             val intent = Intent(this,ResultActivity::class.java)
-            intent.putExtra("123",resutado )
+            intent.putExtra(KEY_RESULT_IMC,resutado )
             startActivity(intent)
 
 
