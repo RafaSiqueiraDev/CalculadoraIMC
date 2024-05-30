@@ -19,8 +19,23 @@ class ResultActivity : AppCompatActivity() {
 
         val tvResult  = findViewById<TextView>(R.id.tv_resultado)
         val tvClasificação  = findViewById<TextView>(R.id.tv_classificao)
-
         tvResult.text = result.toString()
+
+        val classificação : String = if (result <= 18.5f) { "MAGREZA"
+        } else if (result > 18.5f && result <= 24.9f) {
+            "NORMAL"
+        } else if (result > 25f && result <= 29.9f) {
+           "SOBREPESO"
+        } else if (result > 30f && result <= 39.9f) {
+           "OBESIDADE"
+        } else {
+           "OBESIDADE GRAVE"
+        }
+
+        tvClasificação.text = classificação
+
+
+
 
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
