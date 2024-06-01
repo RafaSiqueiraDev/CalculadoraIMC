@@ -34,18 +34,16 @@ class MainActivity : AppCompatActivity() {
             val altura: Float  = alturaStr.toFloat()
 
             val alturaQ2 = altura * altura
-            val resutado = peso * alturaQ2
-
-            // Navegar para próxima tela
-            // Criar o layout da próxima tela
-            // Passar dados (resultado) proxima tela
+            val resutado = peso / alturaQ2
 
             val intent = Intent(this,ResultActivity::class.java)
             intent.putExtra(KEY_RESULT_IMC,resutado )
             startActivity(intent)
 
+                // cores
+                //EditText  background + icone
+                // Gradiente + titulo + icone
 
-            println("Button Action" + resutado)
                 }
 
 
