@@ -1,19 +1,31 @@
 # Calculadora IMC
-Desc
+Esse projeto é um aplicativo nativo que foi densenvolvido com a linguagem KOTLIN, como objetivo principal realizar o calculo do IMC e mostrar o resultado com a classificação na tela seguinte.
 
 ## :camera_flash: Screenshots
 <!-- You can add more screenshots here if you like -->
-Screenshots
+<img src= "https://github.com/RafaSiqueiraDev/CalculadoraIMC/assets/170177563/61a8be03-c69f-490a-9c24-6e55742d93c2" width= 160/> <img src= "https://github.com/RafaSiqueiraDev/CalculadoraIMC/assets/170177563/074f2c05-c073-4a9f-8250-def733f61961" width= 160/>
+
+
 
 ## Tecnologias
-Techs
+- Activity
+- Intent
+- Snackbar
+- Viewgroups
+  - LinearLayout
+  - ConstraintLayout
+ - Views
+   - ImagemView
+   - TextView
+   - Edittext
+   - Button
 
 
 ## License
 ```
 The MIT License (MIT)
 
-Copyright (c) 2023 Roque Buarque Junior
+Copyright (c) 2024 Rafael Pessoa de Siqueira
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the "Software"), to deal in
