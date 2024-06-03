@@ -3,8 +3,7 @@ Esse projeto é um aplicativo nativo que foi densenvolvido com a linguagem KOTLI
 
 ## :camera_flash: Screenshots
 <!-- You can add more screenshots here if you like -->
-<img src= "https://github.com/RafaSiqueiraDev/CalculadoraIMC/assets/170177563/61a8be03-c69f-490a-9c24-6e55742d93c2" width= 160/> <img src= "https://github.com/RafaSiqueiraDev/CalculadoraIMC/assets/170177563/074f2c05-c073-4a9f-8250-def733f61961" width= 160/>
-
+<img src= "https://github.com/RafaSiqueiraDev/CalculadoraIMC/assets/170177563/6cbf4729-93c8-4c76-a1be-24a74a9b6a2a" width= 160/> <img src= "https://github.com/RafaSiqueiraDev/CalculadoraIMC/assets/170177563/bf2cf221-030b-4d11-b944-10384a3a8b46" width= 160/>
 
 
 ## Tecnologias
